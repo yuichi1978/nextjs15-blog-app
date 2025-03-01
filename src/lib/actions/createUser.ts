@@ -36,7 +36,7 @@ export async function createUser(
   prevState: ActionState,
   formData: FormData
 ): Promise<ActionState> {
-  // フォームからわたってきた情報を取得
+  // フォームから渡ってきた情報を取得
   const rawFormData = Object.fromEntries(
     ["name", "email", "password", "confirmPassword"].map((field) => [
       field,
