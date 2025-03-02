@@ -31,7 +31,7 @@ export default function SearchBox() {
     <>
       <Input
         placeholder="記事を検索..."
-        className="w-[200px] lg:w-[300px]"
+        className="hidden sm:block sm:w-[200px] lg:w-[300px]"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
